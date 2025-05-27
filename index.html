@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BloomScoops - Ice Cream for Every Mood</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      
+ <div class="logo_2">
+  <img src="brandlogo.png" alt="BloomScoops Logo" />
+</div>
+<div class="logo">
+  <img src="brandname.png" alt="BloomScoops Logo" />
+</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flavours.html">Flavors</a></li>
+        <li><a href="customize.html">Customize</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="btn-order" onclick="window.location.href='ordernow.html'">Order Now</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Delight in Every Scoop</h1>
+      <p>BloomScoops brings handcrafted, creamy, colorful ice cream flavors made with 💖 just for you.</p>
+      <button class="btn-hero" onclick="window.location.href='flavours.html'">Explore Flavors</button>
+    </div>
+    <div class="hero-img">
+<video autoplay muted loop playsinline style="width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+      <source src="herovideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    </div>
+  </section>
+
+  <section class="flavors">
+    <h2>Popular Flavors</h2>
+    <div class="flavor-grid">
+      <div class="flavor-card">
+        <img src="strawberry.png" alt="Strawberry">
+        <h3>Strawberry Bliss</h3>
+        <p>Fresh and fruity with a creamy twist.</p>
+      </div>
+      <div class="flavor-card">
+        <img src="chocolate.png" alt="Choco Crunch">
+        <h3>Choco Crunch</h3>
+        <p>Decadent chocolate with crispy bites.</p>
+      </div>
+      <div class="flavor-card">
+        <img src="chocomint.webp" alt="Mint Magic">
+        <h3>Mint Magic</h3>
+        <p>Cool mint with chocolate swirls.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding: 40px; background: #fff0f5; color: #333; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 1000px; margin: auto;">
+    <h2 style="text-align: center; color: #d63384; font-size: 2em; margin-bottom: 20px;">About BloomScoops</h2>
+    <p style="font-size: 1.1em; line-height: 1.8; text-align: justify;">
+      Welcome to <strong>BloomScoops</strong> – where every scoop is a scoop of joy! 🍦  
+      Founded with the belief that ice cream should be as vibrant and unique as the people who enjoy it, BloomScoops blends traditional flavors with bold new fusions to create an unforgettable dessert experience.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8; text-align: justify;">
+      Our journey began in a small town where childhood memories, community stories, and seasonal fruits inspired us to handcraft our first batches. Today, BloomScoops has grown into a beloved brand across India, celebrated for its premium ingredients, customizable flavors, and creative toppings – all served with a scoop of happiness.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8; text-align: justify;">
+      From our classic Vanilla Dream to exotic blends like Mango-Chili Tango or Blueberry Basil Bliss, we believe in giving you the power to create your perfect dessert. Whether it’s a simple scoop on a summer evening or a family pack for weekend indulgence, we’re here to add a sprinkle of joy to your every moment.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8; text-align: justify;">
+      🌱 At BloomScoops, sustainability is as important as flavor. We use eco-friendly packaging, source locally whenever possible, and support dairy farmers and artisans in our supply chain.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8; text-align: justify;">
+      So go ahead – scoop, swirl, and smile. BloomScoops is more than ice cream; it’s a celebration of taste, tradition, and togetherness. 💖
+    </p>
+  </div>
+</section>
+
+
+  <footer style="background:#ff85a2; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; font-family: 'Poppins', sans-serif;">
+  <!-- Left: Social Media Icons -->
+  <div style="flex: 1; min-width: 200px;">
+    <h3 style="margin-bottom: 15px;">Follow Us</h3>
+    <div style="display: flex; gap: 10px;">
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <!-- Middle: Suggestion Box -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Suggestions</h3>
+    <form>
+      <textarea placeholder="Tell us how we can improve..." rows="4" style="width: 80%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+      <button type="submit" style="margin-top: 10px; background-color: #e4175b; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">Submit</button>
+    </form>
+  </div>
+
+  <!-- Right: Address & Map -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Main Branch</h3>
+    <p style="margin-bottom: 10px;">
+      BloomScoops HQ,<br>
+      123 Scoop Street,<br>
+      Indiranagar, Bengaluru, India - 560038
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.888218198941!2d77.64078921486147!3d12.969819690869012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167bc70f4691%3A0x4b44c91efb98d501!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1622821147559!5m2!1sen!2sin" 
+      width="100%" height="180" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</footer>
+
+</body>
+</html>

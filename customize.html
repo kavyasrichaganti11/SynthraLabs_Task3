@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customize | BloomScoops</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    body {
+       font-family: 'Quicksand', sans-serif;
+  background: #fff0f5;
+  color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+  background: #ff85a2;
+  padding: 1rem 2rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 564px;
+}
+
+
+
+.logo img {
+  height: 40px; /* Adjust as needed */
+  vertical-align: middle;
+
+}
+.logo_2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo_2 img {
+  height: 100px; /* Adjust as needed */
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffe0ec;
+}
+
+.btn-order {
+  background: #fff;
+  color: #ff85a2;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+h1{
+    color: #333;
+    text-align: center;
+}
+section {
+      padding: 30px;
+      max-width: 950px;
+      margin: auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+      margin-top: 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+    }
+
+    .checkbox-group, .topping-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-group label, .topping-group label {
+      font-weight: normal;
+      background: #ffe4ec;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .checkbox-group input[type="checkbox"],
+    .topping-group input[type="checkbox"] {
+      margin-right: 6px;
+    }
+
+    .checkbox-group label:hover, .topping-group label:hover {
+      background: #ffc0cb;
+      transform: scale(1.05);
+    }
+
+    select, input[type="number"] {
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: 0.3s ease;
+    }
+
+    select:focus, input[type="number"]:focus {
+      border-color: #ff69b4;
+      outline: none;
+      box-shadow: 0 0 5px #ff69b4;
+    }
+
+    .scoop-count {
+      margin-top: 10px;
+      display: block;
+      animation: fadeInUp 0.5s ease-in;
+    }
+
+    .summary {
+      margin-top: 25px;
+      padding: 15px;
+      background: #ffe4ec;
+      border-left: 5px solid #ff69b4;
+      border-radius: 10px;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    button {
+      background: #ff69b4;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-size: 1rem;
+      animation: bounceIn 1s ease;
+    }
+
+    button:hover {
+      background: #d63384;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .checkbox-group, .topping-group {
+        flex-direction: column;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInDown {
+      from { opacity: 0; transform: translateY(-100%); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+      
+ <div class="logo_2">
+  <img src="brandlogo.png" alt="BloomScoops Logo" />
+</div>
+<div class="logo">
+  <img src="brandname.png" alt="BloomScoops Logo" />
+</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flavours.html">Flavors</a></li>
+        <li><a href="customize.html">Customize</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="btn-order" onclick="window.location.href='ordernow.html'">Order Now</button>
+    </nav>
+  </header>
+
+
+  <h1>🍦 Customize Your BloomScoops</h1>
+  <section>
+    <h2>Step 1: Select Base Flavors</h2>
+    <div class="checkbox-group" id="flavor-options">
+      <label><input type="checkbox" value="Vanilla">Vanilla</label>
+      <label><input type="checkbox" value="Chocolate">Chocolate</label>
+      <label><input type="checkbox" value="Strawberry">Strawberry</label>
+      <label><input type="checkbox" value="Mango">Mango</label>
+      <label><input type="checkbox" value="Butterscotch">Butterscotch</label>
+      <label><input type="checkbox" value="Pistachio">Pistachio</label>
+      <label><input type="checkbox" value="Blueberry">Blueberry</label>
+      <label><input type="checkbox" value="Coffee">Coffee</label>
+    </div>
+
+    <div id="scoop-select"></div>
+
+    <h2>Step 2: Choose Toppings</h2>
+    <div class="topping-group" id="toppings">
+      <label><input type="checkbox" value="Choco Chips">Choco Chips</label>
+      <label><input type="checkbox" value="Nuts">Nuts</label>
+      <label><input type="checkbox" value="Sprinkles">Sprinkles</label>
+      <label><input type="checkbox" value="Caramel Swirl">Caramel Swirl</label>
+      <label><input type="checkbox" value="Choco Syrup">Choco Syrup</label>
+      <label><input type="checkbox" value="Oreo Crumbs">Oreo Crumbs</label>
+      <label><input type="checkbox" value="Fresh Fruits">Fresh Fruits</label>
+      <label><input type="checkbox" value="Gummy Bears">Gummy Bears</label>
+    </div>
+
+    <button onclick="generateSummary()">Show My Flavor Summary</button>
+
+    <div class="summary" id="summary"></div>
+  </section>
+ <footer style="background:#ff85a2; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; font-family: 'Poppins', sans-serif;">
+  <!-- Left: Social Media Icons -->
+  <div style="flex: 1; min-width: 200px;">
+    <h3 style="margin-bottom: 15px;">Follow Us</h3>
+    <div style="display: flex; gap: 10px;">
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <!-- Middle: Suggestion Box -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Suggestions</h3>
+    <form>
+      <textarea placeholder="Tell us how we can improve..." rows="4" style="width: 80%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+      <button type="submit" style="margin-top: 10px; background-color: #e4175b; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">Submit</button>
+    </form>
+  </div>
+<!-- Right: Address & Map -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Main Branch</h3>
+    <p style="margin-bottom: 10px;">
+      BloomScoops HQ,<br>
+      123 Scoop Street,<br>
+      Indiranagar, Bengaluru, India - 560038
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.888218198941!2d77.64078921486147!3d12.969819690869012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167bc70f4691%3A0x4b44c91efb98d501!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1622821147559!5m2!1sen!2sin" 
+      width="100%" height="180" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</footer>
+  <script>
+    const flavorOptions = document.querySelectorAll('#flavor-options input');
+    const scoopSelectDiv = document.getElementById('scoop-select');
+
+    flavorOptions.forEach(option => {
+      option.addEventListener('change', updateScoopSelectors);
+    });
+
+    function updateScoopSelectors() {
+      scoopSelectDiv.innerHTML = '';
+      flavorOptions.forEach(option => {
+        if (option.checked) {
+          const label = document.createElement('label');
+          label.innerText = `Scoops of ${option.value}`;
+          const input = document.createElement('input');
+          input.type = 'number';
+          input.min = '1';
+          input.max = '5';
+          input.value = '1';
+          input.name = `scoops-${option.value}`;
+          input.classList.add('scoop-count');
+          scoopSelectDiv.appendChild(label);
+          scoopSelectDiv.appendChild(input);
+        }
+      });
+    }
+
+    function generateSummary() {
+      const selectedFlavors = [];
+      const scoops = {};
+      flavorOptions.forEach(option => {
+        if (option.checked) {
+          selectedFlavors.push(option.value);
+          const scoopInput = document.querySelector(`input[name="scoops-${option.value}"]`);
+          if (scoopInput) {
+            scoops[option.value] = scoopInput.value;
+          }
+        }
+      });
+
+      const selectedToppings = [];
+      const toppingOptions = document.querySelectorAll('#toppings input');
+      toppingOptions.forEach(topping => {
+        if (topping.checked) {
+          selectedToppings.push(topping.value);
+        }
+      });
+
+      const summaryDiv = document.getElementById('summary');
+      summaryDiv.innerHTML = `
+        <h3>Your Custom Creation</h3>
+        <p><strong>Flavors:</strong> ${selectedFlavors.join(', ')}</p>
+        <p><strong>Scoops:</strong> ${Object.entries(scoops).map(([flavor, count]) => `${flavor}: ${count}`).join(', ')}</p>
+        <p><strong>Toppings:</strong> ${selectedToppings.length ? selectedToppings.join(', ') : 'None'}</p>
+        <p>✨ Thanks for customizing your scoop with BloomScoops! ✨</p>
+      `;
+      summaryDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>

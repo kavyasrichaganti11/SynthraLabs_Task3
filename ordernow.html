@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BloomScoops | Order Now</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #fff0f5;
+  color: #333;
+}
+
+.header {
+  background: #ff85a2;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 564px;
+}
+
+
+
+.logo img {
+  height: 40px; /* Adjust as needed */
+  vertical-align: middle;
+
+}
+.logo_2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo_2 img {
+  height: 100px; /* Adjust as needed */
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffe0ec;
+}
+
+.btn-order {
+  background: #fff;
+  color: #ff85a2;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+h1{
+    color: #333;
+    text-align: center;
+}
+    form {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 102, 178, 0.3);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    .quantity-options, .payment-options {
+      margin-top: 15px;
+    }
+    .quantity-options label, .payment-options label {
+      font-weight: normal;
+      display: block;
+      margin: 5px 0;
+    }
+    #price, #checkout, #confirmation {
+      margin-top: 20px;
+      display: none;
+    }
+    button {
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e055a2;
+    }
+    @media (max-width: 600px) {
+      form {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+ <header class="header">
+    <nav class="navbar">
+      
+ <div class="logo_2">
+  <img src="brandlogo.png" alt="BloomScoops Logo" />
+</div>
+<div class="logo">
+  <img src="brandname.png" alt="BloomScoops Logo" />
+</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flavours.html">Flavors</a></li>
+        <li><a href="customize.html">Customize</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="btn-order">Order Now</button>
+    </nav>
+  </header>
+<h1>Order Your BloomScoops Delight 🍦</h1>
+<form id="orderForm">
+  <label>Name:</label>
+  <input type="text" required>
+
+  <label>Mobile:</label>
+  <input type="tel" required>
+
+  <label>Email:</label>
+  <input type="email" required>
+
+  <label>Country:</label>
+  <select id="country" required>
+    <option value="">--Select Country--</option>
+  </select>
+
+  <label>State:</label>
+  <select id="state" required></select>
+
+  <label>District:</label>
+  <select id="district" required></select>
+
+  <label>City:</label>
+  <select id="city" required></select>
+
+  <label>Area:</label>
+  <input type="text" required>
+
+  <label>Door No: </label>
+  <input type="text" required>
+
+  <label>Take Away/Home Delivery:</label>
+  <div class="quantity-options">
+    <label><input type="radio" name="option" value="takeaway"> Take Away</label>
+    <label><input type="radio" name="option" value="homedelivery"> Home Delivery</label>
+    </div>
+
+  <label>Pincode:</label>
+  <input type="text" required>
+
+  <label>Flavour:</label>
+<select required>
+  <option disabled selected>-- Select Flavour --</option>
+  <option>Vanilla</option>
+  <option>Chocolate</option>
+  <option>Strawberry</option>
+  <option>Mango</option>
+  <option>Butterscotch</option>
+  <option>Cookies & Cream</option>
+  <option>Mint Chocolate Chip</option>
+  <option>Caramel Swirl</option>
+  <option>Blueberry Cheesecake</option>
+  <option>Raspberry Ripple</option>
+  <option>Tutti Frutti</option>
+  <option>Coffee Mocha</option>
+  <option>Orange Sorbet</option>
+  <option>Almond Fudge</option>
+  <option>Green Apple Delight</option>
+  <option>Pistachio</option>
+  <option>Red Velvet</option>
+  <option>Black Currant</option>
+</select>
+
+  <label>Quantity:</label>
+  <div class="quantity-options">
+    <label><input type="radio" name="qty" value="50"> Bars - ₹50</label>
+    <label><input type="radio" name="qty" value="100"> Scoops - ₹100</label>
+    <label><input type="radio" name="qty" value="200"> Family Pack - ₹200</label>
+    <label><input type="radio" name="qty" value="500"> Party Pack - ₹500</label>
+  </div>
+
+  <label>Store Outlet:</label>
+  <select id="store" required></select>
+
+  <div id="price"><strong>Total Price: ₹<span id="priceValue">0</span></strong></div>
+
+  <div id="checkout">
+    <label>Choose Payment Method:</label>
+    <div class="payment-options">
+      <label><input type="radio" name="payment" value="UPI"> UPI</label>
+      <label><input type="radio" name="payment" value="Credit Card"> Credit Card</label>
+      <label><input type="radio" name="payment" value="Debit Card"> Debit Card</label>
+      <label><input type="radio" name="payment" value="COD"> Cash on Delivery</label>
+      <label><input type="radio" name="payment" value="Gift Card"> Gift Card</label>
+    </div>
+    <button type="button" onclick="placeOrder()">PLACE ORDER</button>
+  </div>
+
+  <div id="confirmation"></div>
+</form>
+<footer style="background:#ff85a2; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; font-family: 'Poppins', sans-serif;">
+  <!-- Left: Social Media Icons -->
+  <div style="flex: 1; min-width: 200px;">
+    <h3 style="margin-bottom: 15px;">Follow Us</h3>
+    <div style="display: flex; gap: 10px;">
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <!-- Middle: Suggestion Box -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Suggestions</h3>
+    <form>
+      <textarea placeholder="Tell us how we can improve..." rows="4" style="width: 80%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+      <button type="submit" style="margin-top: 10px; background-color: #e4175b; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">Submit</button>
+    </form>
+  </div>
+
+  <!-- Right: Address & Map -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Main Branch</h3>
+    <p style="margin-bottom: 10px;">
+      BloomScoops HQ,<br>
+      123 Scoop Street,<br>
+      Indiranagar, Bengaluru, India - 560038
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.888218198941!2d77.64078921486147!3d12.969819690869012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167bc70f4691%3A0x4b44c91efb98d501!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1622821147559!5m2!1sen!2sin" 
+      width="100%" height="180" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</footer>
+
+<script>
+  const locationData = {
+    "India": {
+      "Andhra Pradesh": {
+        "East Godavari": {
+          "Rajahmundry": ["BloomScoops Store - AVA Road", "BloomScoops Store - Pushkar Ghat"],
+          "Kakinada": ["BloomScoops Store - Main Street"]
+        }
+      },
+      "Maharashtra": {
+        "Pune": {
+          "Hinjewadi": ["BloomScoops - Phoenix Mall"],
+          "Kothrud": ["BloomScoops - Paud Road"]
+        }
+      },
+      "Karnataka": {
+    "Bengaluru Urban": {
+      "Indiranagar": ["BloomScoops – Indiranagar Delight"]
+    }
+  },
+  "Tamil Nadu": {
+    "Chennai": {
+      "T. Nagar": ["BloomScoops – T. Nagar Treats"]
+    }
+  },
+  "Rajasthan": {
+    "Jaipur": {
+      "Vaishali Nagar": ["BloomScoops – Pink City Scoop"]
+    }
+  },
+  "Uttar Pradesh": {
+    "Lucknow": {
+      "Hazratganj": ["BloomScoops – Nawabi Bites"]
+    }
+  },
+  "Telangana": {
+    "Hyderabad": {
+      "Banjara Hills": ["BloomScoops – Banjara Chillz"]
+    }
+  },
+  "Punjab": {
+    "Amritsar": {
+      "Ranjit Avenue": ["BloomScoops – Golden Scoop"]
+    }
+  },
+  "Odisha": {
+    "Bhubaneswar": {
+      "Patia": ["BloomScoops – Patia Paradise"]
+    }
+  },
+  "Assam": {
+    "Kamrup Metropolitan": {
+      "GS Road": ["BloomScoops – Guwahati Scoops"]
+    }
+  },
+  "Jharkhand": {
+    "Ranchi": {
+      "Lalpur": ["BloomScoops – Ranchi Chill Spot"]
+    }
+  },
+  "Himachal Pradesh": {
+    "Shimla": {
+      "Mall Road": ["BloomScoops – Hilltop Creamery"]
+    }
+  }
+    }
+  };
+
+  const countrySel = document.getElementById("country");
+  const stateSel = document.getElementById("state");
+  const districtSel = document.getElementById("district");
+  const citySel = document.getElementById("city");
+  const storeSel = document.getElementById("store");
+
+  for (let country in locationData) {
+    countrySel.add(new Option(country, country));
+  }
+
+  countrySel.onchange = () => {
+    stateSel.length = 1;
+    districtSel.length = 1;
+    citySel.length = 1;
+    storeSel.length = 1;
+    if (countrySel.value !== "") {
+      let states = locationData[countrySel.value];
+      for (let state in states) {
+        stateSel.add(new Option(state, state));
+      }
+    }
+  };
+
+  stateSel.onchange = () => {
+    districtSel.length = 1;
+    citySel.length = 1;
+    storeSel.length = 1;
+    if (stateSel.value !== "") {
+      let districts = locationData[countrySel.value][stateSel.value];
+      for (let district in districts) {
+        districtSel.add(new Option(district, district));
+      }
+    }
+  };
+
+  districtSel.onchange = () => {
+    citySel.length = 1;
+    storeSel.length = 1;
+    if (districtSel.value !== "") {
+      let cities = locationData[countrySel.value][stateSel.value][districtSel.value];
+      for (let city in cities) {
+        citySel.add(new Option(city, city));
+      }
+    }
+  };
+
+  citySel.onchange = () => {
+    storeSel.length = 1;
+    if (citySel.value !== "") {
+      let stores = locationData[countrySel.value][stateSel.value][districtSel.value][citySel.value];
+      stores.forEach(store => storeSel.add(new Option(store, store)));
+    }
+  };
+
+  const qtyRadios = document.querySelectorAll('input[name="qty"]');
+  qtyRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      const price = radio.value;
+      document.getElementById("priceValue").textContent = price;
+      document.getElementById("price").style.display = "block";
+      document.getElementById("checkout").style.display = "block";
+    });
+  });
+
+  function placeOrder() {
+    const orderId = "BS" + Math.floor(Math.random() * 1000000);
+    const paymentMethod = document.querySelector('input[name="payment"]:checked');
+    if (!paymentMethod) {
+      alert("Please select a payment method.");
+      return;
+    }
+    document.getElementById("confirmation").innerHTML = `
+      <h2>ORDER PLACED SUCCESSFULLY ✅</h2>
+      <p>Order ID: <strong>${orderId}</strong></p>
+      <p>Thank you for ordering with <strong>BloomScoops</strong>! We'll deliver your delight soon 🍨</p>
+    `;
+    document.getElementById("confirmation").style.display = "block";
+    document.getElementById("checkout").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

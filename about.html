@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BloomScoops - About Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    body {
+      font-family: 'Quicksand', sans-serif;
+  background: #fff0f5;
+  color: #333;
+      scroll-behavior: smooth;
+    }
+
+   .header {
+  background: #ff85a2;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 564px;
+}
+
+
+
+.logo img {
+  height: 40px; /* Adjust as needed */
+  vertical-align: middle;
+
+}
+.logo_2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo_2 img {
+  height: 100px; /* Adjust as needed */
+  vertical-align: middle;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffe0ec;
+}
+
+.btn-order {
+  background: #fff;
+  color: #ff85a2;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(145deg, #ffe4e1, #ffebef);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #ff1493;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      color: #444;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 5rem auto;
+      padding-left: 1rem;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #ffb6c1;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      margin-left: -3px;
+    }
+
+    .timeline-item {
+      padding: 1rem 2rem;
+      background: #fff;
+      position: relative;
+      border-left: 6px solid transparent;
+      margin: 2rem 0;
+      border-radius: 10px;
+      transition: all 0.4s ease;
+      opacity: 0;
+      transform: translateX(30px);
+    }
+
+    .timeline-item::before {
+      content: "🍦";
+      position: absolute;
+      left: -35px;
+      top: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .timeline-item h3 {
+      color: #ff1493;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-item.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .team-section {
+      background: #fff0f5;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #ff1493;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .team-member {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: scale(1.05);
+    }
+
+    .team-member img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .team-member h4 {
+      margin: 0.5rem 0;
+      color: #ff69b4;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::after {
+        left: 10px;
+      }
+
+      .timeline-item {
+        padding-left: 2.5rem;
+      }
+
+      .team-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <header class="header">
+    <nav class="navbar">
+      
+ <div class="logo_2">
+  <img src="brandlogo.png" alt="BloomScoops Logo" />
+</div>
+<div class="logo">
+  <img src="brandname.png" alt="BloomScoops Logo" />
+</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flavours.html">Flavors</a></li>
+        <li><a href="customize.html">Customize</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="btn-order" onclick="window.location.href='ordernow.html'">Order Now</button>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <h2>Our Sweet Story</h2>
+    <p>BloomScoops started with a dream to turn simple moments into delicious memories. From our first scoop to our latest creation, we're dedicated to making joy one flavour at a time.</p>
+  </section>
+
+  <section class="timeline" id="timeline">
+    <div class="timeline-item">
+      <h3>2018 – The Spark</h3>
+      <p>Our founder imagined an ice cream brand that would blend fun, creativity, and premium ingredients. The idea for BloomScoops was born!</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2019 – First Scoop Served</h3>
+      <p>We opened our first pop-up stand and people instantly fell in love with our handcrafted flavours and colorful designs.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2021 – Going Digital</h3>
+      <p>We launched our online delivery platform, expanding our reach and delighting customers at home.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2023 – 50+ Flavours</h3>
+      <p>From classic vanilla to wild raspberry swirl, we hit our 50th flavour milestone with a celebration scoop!</p>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h2>Meet Our Dream Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="emma.jpeg" alt="Emma">
+        <h4>Emma Frost</h4>
+        <p>Founder & Flavour Master</p>
+      </div>
+      <div class="team-member">
+        <img src="leo.jpg" alt="Leo">
+        <h4>Leo Bright</h4>
+        <p>Head of Design</p>
+      </div>
+      <div class="team-member">
+        <img src="sophi.jpg" alt="Sophie">
+        <h4>Sophie Chill</h4>
+        <p>Brand Storyteller</p>
+      </div>
+    </div>
+  </section>
+<footer style="background : #ff85a2; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; font-family: 'Poppins', sans-serif;">
+  <!-- Left: Social Media Icons -->
+  <div style="flex: 1; min-width: 200px;">
+    <h3 style="margin-bottom: 15px;">Follow Us</h3>
+    <div style="display: flex; gap: 10px;">
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="color: #e4175b; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <!-- Middle: Suggestion Box -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Suggestions</h3>
+    <form>
+      <textarea placeholder="Tell us how we can improve..." rows="4" style="width: 80%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+      <button type="submit" style="margin-top: 10px; background-color: #e4175b; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">Submit</button>
+    </form>
+  </div>
+
+  <!-- Right: Address & Map -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-bottom: 10px;">Main Branch</h3>
+    <p style="margin-bottom: 10px;">
+      BloomScoops HQ,<br>
+      123 Scoop Street,<br>
+      Indiranagar, Bengaluru, India - 560038
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.888218198941!2d77.64078921486147!3d12.969819690869012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167bc70f4691%3A0x4b44c91efb98d501!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1622821147559!5m2!1sen!2sin" 
+      width="100%" height="180" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</footer>
+
+  <script>
+    // Timeline animation on scroll
+    const items = document.querySelectorAll('.timeline-item');
+
+    function revealItems() {
+      items.forEach(item => {
+        const boxTop = item.getBoundingClientRect().top;
+        if (boxTop < window.innerHeight - 100) {
+          item.classList.add('show');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealItems);
+    revealItems();
+  </script>
+
+</body>
+</html>
