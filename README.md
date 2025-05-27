@@ -51,7 +51,7 @@ Welcome to the official landing website of **BloomScoops**, a fictional ice crea
 
 ## 📌 View LivePage
 
-[Click here to view live site](#) 
+[Click here to view live site](#https://kavyasrichaganti11.github.io/SynthraLabs_Task3/) 
 
 ---
 
